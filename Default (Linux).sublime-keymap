@@ -1,0 +1,28 @@
+[
+  {
+    "keys": ["enter"], "command": "add_comment_line",
+    "context":
+      [
+        {
+          "key":        "preceding_text",
+          "operator":   "regex_contains",
+          "operand":    "^\\s*\\*($|[^\\/]+$)",
+          "match_all":  false
+        },
+        { "key": "auto_complete_visible", "operator": "equal", "operand": false }
+      ]
+  },
+  {
+    "keys": ["enter"], "command": "add_first_comment_line",
+    "context":
+      [
+        {
+          "key":        "preceding_text",
+          "operator":   "regex_contains",
+          "operand":    "^\\s*\\/\\*($|[^\\/]+$)",
+          "match_all":  false
+        },
+        { "key": "auto_complete_visible", "operator": "equal", "operand": false }
+      ]
+  }
+]
