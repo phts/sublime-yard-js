@@ -6,7 +6,3 @@ Adds support for [Yard-js](https://github.com/lsegal/yard-js) to Sublime Text 3.
 
 * Adding "*" on each comment line on Enter press
 * Tags and directives completions
-
-## Copyright
-
-© 2014 Phil Tsarik
